@@ -6,7 +6,7 @@ const Home = () => {
 
     /*
        Sir,  API fetch is getting CORS Error so stored the api data in mockData varibale ,
-       Please find ScreenShots in statics folder
+       Please find Demo Video in public/statics folder
     */
 
     const [data, setData] = useState(mockData.clients);
