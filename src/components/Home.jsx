@@ -4,6 +4,10 @@ import './Home.css';
 
 const Home = () => {
 
+    /*
+       Sir,  API fetch is getting CORS Error so stored the api data in mockData varibale 
+    */
+
     const [data, setData] = useState(mockData.clients);
     const [selectedOption, setSelectedOption] = useState('All-Clients');
     const [isOpen, setOpen] = useState(false);
