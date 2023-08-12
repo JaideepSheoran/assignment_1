@@ -1,0 +1,40 @@
+.report {
+    color: white;
+    width: 60%;
+    margin: auto;
+}
+
+.report h1 {
+    width: 100%;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+.report input {
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+table,
+td,
+tr,
+th {
+    border: 1px solid white;
+    color: white;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: 5px;
+    text-align: center;
+    font-weight: 500;
+}
+
+th {
+    color: rgb(182, 255, 35);
+    font-weight: bold;
+}
