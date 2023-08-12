@@ -23,14 +23,16 @@ const Report = () => {
         if(storeId == 0) {
             return;
         }
-        setLoading(true);
         fetch(`/trigger_report/${storeId}`).then((response) => {
-            return response.json()
+            if(response.status == 200){
+                return response.json()
+            }else{
+                window.alert('Wrong ID');
+            }
         }).then((response) => {
             setReport(response)
             console.log(response);
-            setLoading(false);
-        }).catch(err => console.log(err), setLoading(false))
+        }).catch(err => console.log(err))
     }, [storeId])
 
   return (
@@ -59,10 +61,6 @@ const Report = () => {
                         <td>{item[1]}</td>
                     </tr>
                 })
-            }
-            {
-                loading && 
-                <tr><td>Loading...</td><td>Loading...</td><td>Loading...</td></tr>
             }
         </table>
     </div>
